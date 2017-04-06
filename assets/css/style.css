@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .jumbotron {
 	background-image: url("../../images/pexels-photo-24306.jpg");
 	margin-bottom: 60px;
@@ -49,3 +50,21 @@ footer {
 }
 
 
+=======
+.jumbotron{
+	background-color: lightgrey;
+	color:Darkorange;
+	font-weight:bolder;
+	text-align:center;
+	font-family: Faster One;
+
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    border-style: solid;
+    border-color:orange;
+}
+    
+>>>>>>> 9f54b4cdfe6b315febc12b507b1883cb9bd70888
