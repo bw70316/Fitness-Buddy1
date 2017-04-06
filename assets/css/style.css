@@ -1,7 +1,10 @@
-<<<<<<< HEAD
 .jumbotron {
 	background-image: url("../../images/pexels-photo-24306.jpg");
-	margin-bottom: 60px;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 70px;
+	color: white;
+	border: lightgray;
 }
 
 .flex {
