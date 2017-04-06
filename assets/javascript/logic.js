@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+//connectd to index.html
+
+
+
+ var password = document.getElementById("password")
+  , confirm_password = document.getElementById("confirm_password");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword
+=======
 function myMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 10,
@@ -58,3 +77,4 @@ function myMap() {
           
         }
       }
+>>>>>>> 9f54b4cdfe6b315febc12b507b1883cb9bd70888
