@@ -1,0 +1,16 @@
+.jumbotron{
+	background-color: lightgrey;
+	color:Darkorange;
+	font-weight:bolder;
+	text-align:center;
+	font-family: Faster One;
+
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    border-style: solid;
+    border-color:orange;
+}
+    
