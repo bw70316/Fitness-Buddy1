@@ -1,3 +1,59 @@
+.jumbotron {
+	background-image: url("../../images/pexels-photo-24306.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 70px;
+	color: white;
+	border: lightgray;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.header {
+	background-color: #870c22;
+	text-align: center;
+	padding: 15px;
+	border-radius: 15px;
+	border: 1px solid darkblue;
+
+}
+
+.header button {
+    margin: 10px;
+
+}
+
+h1 {
+	font-family: lucida; 
+	font-weight: normal;
+	font-size: 50px;
+	text-align: center;
+	color: white;
+}
+
+.click {
+   
+left:6px;
+top:191px;
+font-family:MS Shell Dlg 2;
+font-size:8px;
+font-weight:NORMAL;
+text-align: center;
+margin-left:auto;
+margin-right:auto;
+border-radius: 12px;
+}
+
+footer {
+	text-align: center;
+}
+
+
+=======
 .jumbotron{
 	background-color: lightgrey;
 	color:Darkorange;
@@ -14,3 +70,4 @@
     border-color:orange;
 }
     
+>>>>>>> 9f54b4cdfe6b315febc12b507b1883cb9bd70888
