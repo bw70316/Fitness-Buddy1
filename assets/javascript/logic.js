@@ -1,9 +1,75 @@
-<<<<<<< HEAD
-//connectd to index.html
 
 
 
- var password = document.getElementById("password")
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCcuXZXNmLFDO8EV2GrcK3XrorSbVOaC8I",
+    authDomain: "healthy-connex.firebaseapp.com",
+    databaseURL: "https://healthy-connex.firebaseio.com",
+    projectId: "healthy-connex",
+    storageBucket: "healthy-connex.appspot.com",
+    messagingSenderId: "376273698490"
+  };
+
+  firebase.initializeApp(config);
+
+  var database = firebase.database();
+
+$("#add-user-btn").on("click", function(event) {
+event.preventDefault();
+
+var userName = $("#full-name").val().trim();
+var addressOne = $("#address").val().trim();
+var city = $("#city").val().trim();
+var state = $("#state").val().trim();
+var zipCode = $("#postal-code").val().trim();
+var country = $("#country").val().trim();
+var mail = $("#email").val().trim();
+var password = $("#password").val().trim();
+var activity = $("#sel1").val().trim();
+var gender = $("#male").val().trim();
+var gender = $("#female").val().trim();
+var activity = $("#sel1").val().trim();
+var age = $("#sel2").val().trim();
+var skill = $("#sel3").val().trim();
+
+var newUser = {
+
+  name: userName,
+ address: addressOne, 
+ city: city,
+ state: state,
+ zip: zipCode,
+ nation: country,
+ email: mail,
+ password: password,
+ hobby: activity,
+ gender: gender,
+ age: age,
+ level: skill
+
+};
+
+database.ref().push(newUser);
+
+console.log(newUser.name);
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
+
+
+var password = document.getElementById("password")
   , confirm_password = document.getElementById("confirm_password");
 
 function validatePassword(){
@@ -15,8 +81,8 @@ function validatePassword(){
 }
 
 password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword
-=======
+confirm_password.onkeyup = validatePassword;
+
 function myMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 10,
@@ -77,4 +143,3 @@ function myMap() {
           
         }
       }
->>>>>>> 9f54b4cdfe6b315febc12b507b1883cb9bd70888
