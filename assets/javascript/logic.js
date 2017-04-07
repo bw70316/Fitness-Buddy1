@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 //connectd to index.html
 
 
@@ -16,7 +15,6 @@ function validatePassword(){
 
 password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword
-=======
 function myMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 10,
@@ -25,6 +23,17 @@ function myMap() {
 
         setMarkers(map);
       }
+
+   var config = {
+   apiKey: "AIzaSyCcuXZXNmLFDO8EV2GrcK3XrorSbVOaC8I",
+   authDomain: "healthy-connex.firebaseapp.com",
+   databaseURL: "https://healthy-connex.firebaseio.com",
+   projectId: "healthy-connex",
+   storageBucket: "healthy-connex.appspot.com",
+   messagingSenderId: "376273698490"
+    };
+   firebase.initializeApp(config);
+
 
       // Data for the markers consisting of a name, a LatLng and a zIndex for the
       // order in which these markers should display on top of each other.
@@ -76,5 +85,19 @@ function myMap() {
           });
           
         }
+	}
+  
+      function codeAddress() {
+      var address = document.getElementById('address').value;
+      geocoder.geocode( { 'address': address}, function(results, status) {
+      if (status == 'OK') {
+        map.setCenter(results[0].geometry.location);
+        var marker = new google.maps.Marker({
+            map: map,
+            position: results[0].geometry.location
+        });
+      } else {
+        alert('Geocode was not successful for the following reason: ' + status);
       }
->>>>>>> 9f54b4cdfe6b315febc12b507b1883cb9bd70888
+    });
+  }
