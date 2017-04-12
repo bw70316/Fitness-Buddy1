@@ -5,43 +5,29 @@
  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 <title>Healthy ConneX</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
 <link href="reset.css">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Faster One">
 <!-- Firebase Reference -->
 <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
-
 </head>
 <body>
-
   <div class="container">
-
     <div class="jumbotron">
       <h1 class="one font-effect-fire-animation">Healthy ConneX</h1>
 </div>
-
   <!-- Link with New Tab -->
     <hr>
-     <br>
-    <div class="Main">
-      <div class="row">
-        <div class="col-1g-12">
-          <div class="panel panel-default">
-            `<div class="panel-heading">Connex to a Fitness Budddy!</div>
-            <p>Use the form below to find Workout Partners in your area based on similar ages, interests, and skill levels.</p>
-        <div class="panel-body">
-
-      
-         
-                <!-- full-name input-->
-                
-    <form action="">
-  <input type="radio" name="gender" value="male" id="male"> Male
-  <input type="radio" name="gender" value="female" id= "female"> Female<br>
-
-</form>
+    <form>
+  <div class="control-group">
+                    <label class="control-label">Gender:</label>
+                    <div class="controls">
+                        <input id="gender" name="gender" type="text" placeholder="gender"
+                        class="input-xlarge">
+                                </div>
+                </div>
+            
      
 <!--Form to be selected by user for activity - future will include level of difficulty and more detailed choices !-->
      <form role="form">
@@ -70,7 +56,6 @@
                 </select>
       </div>
       </form>
-
 <form role="form">
      <div class="form-group">
         <div class="form-group">
@@ -82,29 +67,17 @@
                                   </select>
       </div>
       </form>
-
-
-
-
   <button type="submit" class="btn btn-default" id="add-user-btn">Submit</button>
-  
+  <button type="button" class="btn btn-default">Clear</button>
 </form>
         </div>
       </div>
     </div>
     </div>
-
-
-
-
-
-
 </div>
-
-
 <div class="row">
 <div class="col-1g-12">
-  <div class="panel panel-default">
+  <div class="panel panel-default" id="athlete-form">
      <div class="panel-heading">Athletes in Your Area:</div>
         <div class="panel-body">
        <table class="table table-hover" id='athlete-table'>
@@ -112,8 +85,9 @@
                   <tr>
                     <th>User</th>
                     <th>Favorite Activity</th>
+                    <th>Email</th>
                     <th>Gender</th>
-                    <th>Distance to You</th>
+                    <th>Distance to You</th> <!--changed this table to reflect the right stuff-->
                    </tr>
                 </thead>
                 <tbody>
@@ -123,20 +97,25 @@
     </div>
     </div>
     </div>
-
 <hr>
-  
+
+<div id="floating-panel">
+      <input id="address" type="textbox" value="Chapel Hill, NC">
+      <input id="submit" type="button" value="Geocode">
+    </div>
+  <div id="map" style="width:75%;height:85%;position:center"></div>
     <div class="click">
      <button><a href="https://en-gb.facebook.com/login/" target="_blank">ConneX to Facebook</a></button>
      <button><a href="https://twitter.com/?lang=en">ConneX to Twitter</a></button>
      <button><a href="https://www.instagram.com/?hl=en" target="_blank">ConneX to Instagram</a></button>
      </div>
 
-<div id="map" style="width:100%;height:500px"></div>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
  <script type="text/javascript" src="assets/javascript/logic.js"></script>
- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl7Q9Q4IqIkrwiqt4LdzNQdfv8s0ps068&callback=myMap"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYKz1hIpSy_Zc8kV6RUsh_55e7UHn5xl8&callback=initMap"></script>
+    
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYKz1hIpSy_Zc8kV6RUsh_55e7UHn5xl8&libraries=geometry">
 
 
 </body>

@@ -1,49 +1,49 @@
 .jumbotron {
-   background-image: url("../../images/pexels-photo-24306.jpg");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: 1800px;
-   padding-bottom: 370px;
-   text-align: center;
-   color: white;
-   font-size: 25px;
-   
-   
+  background-image: url("../../images/pexels-photo-24306.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1800px;
+  padding-bottom: 370px;
+  text-align: center;
+  font-size: 16px;
+ 
+ 
+ 
 }
 
 .flex {
-   display: flex;
-   justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 
 }
 
 .header {
-   background-color: #870c22 ;
-   text-align: center;
-   padding: 15px;
-   border-radius: 15px;
-   border: 1px solid darkblue;
+  background-color: #870c22 ;
+  text-align: center;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid darkblue;
 
 }
 
 .header button {
-  margin: 10px;
+ margin: 10px;
 
 }
 
 h1 {
-   font-family: lucida;
-   font-weight: normal;
-   font-size: 60px;
-   text-align: center;
-   color: black;
-   text-shadow: 0 0 4px white, 0 0 5px white;
-   
+  font-family: lucida;
+  font-weight: normal;
+  font-size: 60px;
+  text-align: center;
+  color: black;
+  text-shadow: 0 0 4px white, 0 0 5px white;
+ 
 }
 
 .click {
-   border-radius: 15px;
-   text-align: center;
+  border-radius: 15px;
+  text-align: center;
 }
 
 
@@ -59,43 +59,47 @@ margin-left: -900px;
 
 
 #map {
-  height: 400px;
-  width: 100%;
-  border-style: solid;
-  border-color:orange;
-}
  
+ width: 75%!important;
+ border-style: solid;
+ border-color:orange;
+ border-width: 20px;
+ position: relative;
+ overflow: hidden;
+ padding-bottom: 22.25%;
+ padding-top: 30px;
+ padding-left: 200px;
+ margin-left: 10%;
+}
+
 body {
-   background-color: #5c687c ;
+  background-color: #5c687c ;
 }
 
 .content1 {
-   float: left;
-   background: #455AA3 ;
-  padding: 20px;
-  margin: 80px;
-  height: 700px;
-  width: 570px;
-  font-size: 16px;
-  border-radius: 15px;
+  float: left;
+  background: #455AA3 ;
+ padding: 20px;
+ margin: 80px;
+ height: 700px;
+ width: 570px;
+ font-size: 16px;
+ border-radius: 15px;
 }
 
 #state {
-    margin-right: 25px;
+   margin-right: 25px;
 }
 
 #country {
-    width:200px;
+   width:200px;
 }
 
 #gender {
-    margin-right:70px;
+   margin-right:70px;
 }
 
 #add-user-btn {
-    color:black;
-    margin-right:50px;
+   color:black;
+   margin-right:50px;
 }
-
-Mark as read (esc)
-Edit  More actions

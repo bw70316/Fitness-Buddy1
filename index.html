@@ -11,36 +11,38 @@
 
 </head>
 <body>
-
-  
-
+<!-- This is the login information for current users -->
+  <div class="container">
     <div class="jumbotron">
-      <form action="/action_page.php">
+      <h1 class="one font-effect-fire-animation">Healthy ConneX</h1>
+         <form action="/action_page.php">
+      <br>
         Email:
-        <input type="text" name="firstname" value="">
+          <input type="text" name="email" value="" id="user">
         Password:
-        <input type="text" name="lastname" value="">
-        <br><br>
-        <input type="submit" value="Login" style="color: black">
-    
-      </form>
+         <input type="text" name="password" value="">
+           <br><br>
+             <input type="button" value="Login" onclick="location.href= 'Connex.html';">
+         </form>
+ </div>
 
-
-    </div>
-      <h1>Healthy ConneX</h1>
-        <div class="click">
-          <button><a href="https://en-gb.facebook.com/login/" target="_blank">ConneX to Facebook</a></button>
-            <img src="">
-              <button><a href="https://twitter.com/?lang=en">ConneX to Twitter</a></button>
-                <button><a href="https://www.instagram.com/?hl=en" target="_blank">ConneX to Instagram</a></button>
-        <hr>
-
-              <!-- Link with New Tab -->
-          <div class="content1">
-             <form>
-                <h2>Sign Up</h2>
+  <!-- Link with New Tab -->
+  
+ 
+    <hr>
+     <br>
+    <div class="Main">
+      <div class="row">
+        <div class="col-1g-12">
          
-              <div class="control-group">
+            `<div class="panel-heading"></div>
+        
+
+<div class="panel panel-default">
+  <div class="panel-body">
+         
+                <!-- full-name input-->
+                <div class="control-group">
                     <label class="control-label">Your Name</label>
                     <div class="controls">
                         <input id="full-name" name="full-name" type="text" placeholder="full name"
@@ -48,10 +50,8 @@
                         <p class="help-block"></p>
                     </div>
                 </div>
-             
-
                 <!-- address-line1 input-->
-               <div class="control-group">
+                <div class="control-group">
                     <label class="control-label">Please Enter Your Address:</label>
                     <div class="controls">
                         <input id="address" name="address-line1" type="text" placeholder="Your Address"
@@ -60,78 +60,35 @@
                     </div>
                 </div>
                 <!-- address-line2 input-->
-                 <div class="control-group">
-                    <label class="control-label">City</label>
+                
+                <!-- city input-->
+                <div class="control-group">
+                    <label class="control-label">City / Town</label>
                     <div class="controls">
                         <input id="city" name="city" type="text" placeholder="City" class="input-xlarge">
                         <p class="help-block"></p>
                     </div>
                 </div>
-             
-                      
-             <div class="control-group">
-                    <label class="control-label">State</label>
+                <!-- region input-->
+                <div class="control-group">
+                    <label class="control-label">Your State: (turn into dropdown bar)</label>
                     <div class="controls">
-                        <select id="state" name="state" class="input-xlarge">
-                        <option value="AL">Alabama</option>
-                        <option value="AK">Alaska</option>
-                        <option value="AZ">Arizona</option>
-                        <option value="AR">Arkansas</option>
-                        <option value="CA">California</option>
-                        <option value="CO">Colorado</option>
-                        <option value="CT">Connecticut</option>
-                        <option value="DE">Delaware</option>
-                        <option value="DC">District Of Columbia</option>
-                        <option value="FL">Florida</option>
-                        <option value="GA">Georgia</option>
-                        <option value="HI">Hawaii</option>
-                        <option value="ID">Idaho</option>
-                        <option value="IL">Illinois</option>
-                        <option value="IN">Indiana</option>
-                        <option value="IA">Iowa</option>
-                        <option value="KS">Kansas</option>
-                        <option value="KY">Kentucky</option>
-                        <option value="LA">Louisiana</option>
-                        <option value="ME">Maine</option>
-                        <option value="MD">Maryland</option>
-                        <option value="MA">Massachusetts</option>
-                        <option value="MI">Michigan</option>
-                        <option value="MN">Minnesota</option>
-                        <option value="MS">Mississippi</option>
-                        <option value="MO">Missouri</option>
-                        <option value="MT">Montana</option>
-                        <option value="NE">Nebraska</option>
-                        <option value="NV">Nevada</option>
-                        <option value="NH">New Hampshire</option>
-                        <option value="NJ">New Jersey</option>
-                        <option value="NM">New Mexico</option>
-                        <option value="NY">New York</option>
-                        <option value="NC">North Carolina</option>
-                        <option value="ND">North Dakota</option>
-                        <option value="OH">Ohio</option>
-                        <option value="OK">Oklahoma</option>
-                        <option value="OR">Oregon</option>
-                        <option value="PA">Pennsylvania</option>
-                        <option value="RI">Rhode Island</option>
-                        <option value="SC">South Carolina</option>
-                        <option value="SD">South Dakota</option>
-                        <option value="TN">Tennessee</option>
-                        <option value="TX">Texas</option>
-                        <option value="UT">Utah</option>
-                        <option value="VT">Vermont</option>
-                        <option value="VA">Virginia</option>
-                        <option value="WA">Washington</option>
-                        <option value="WV">West Virginia</option>
-                        <option value="WI">Wisconsin</option>
-                        <option value="WY">Wyoming</option>
-                    </select>           
-
+                        <input id="state" name="state" type="text" placeholder="state"
+                        class="input-xlarge">
+                        <p class="help-block"></p>
                     </div>
                 </div>
-            </fieldset>
-        </form> <br>
-             
-             <div class="control-group">
+                <!-- postal-code input-->
+                <div class="control-group">
+                    <label class="control-label">Zip / Postal Code</label>
+                    <div class="controls">
+                        <input id="postal-code" name="postal-code" type="text" placeholder="zip or postal code"
+                        class="input-xlarge">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+                <!-- country select -->
+                <div class="control-group">
                     <label class="control-label">Country</label>
                     <div class="controls">
                         <select id="country" name="country" class="input-xlarge">
@@ -381,60 +338,165 @@
                 </div>
             </fieldset>
         </form> <br>
-                
-                <form>
+
+        <div class="control-group">
+                    <label class="control-label">State</label>
+                    <div class="controls">
+                        <select id="state" name="state" class="input-xlarge">
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District Of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                    </select>           
+
+                    </div>
+                </div>
+            </fieldset>
+        </form> <br>
+         
+       <form>
   E-mail:<br>
   <input type="email" name="email" id="email">
 </form><br>
-<p>Password:</p>
+<p>Password</p>
      <form class="pure-form">
     <fieldset>
 
-       <form class="pure-form">
-    <fieldset>
-    <input type="password" placeholder="Password" id="password" required><br> <br>
-        <input type="password" placeholder="Confirm Password" id="confirm_password" style="    margin-left: 74px;"  required>
+        <input type="password" placeholder="Password" id="password" required>
+        <input type="password" placeholder="Confirm Password" id="confirm_password" required>
 
-        <button type="submit" class="pure-button pure-button-primary">Confirm</button>
+        <button type="submit" class="pure-button pure-button-primary">Check Match</button>
     </fieldset>
 </form>
+</div>
+</div>
 
-    <form action="" id="gender"> <br>
+<div class="panel panel-default">
+  <div class="panel-body">
+
+    <form action="">
   <input type="radio" name="gender" value="male" id="male"> Male
-  <input type="radio" name="gender" value="female" id= "female"> Female<br><br>
+  <input type="radio" name="gender" value="female" id= "female"> Female<br>
 
 </form>
-     
-
-
-
-  <button type="submit" class="btn btn-default" id="add-user-btn">Submit</button>
  
+ 
+     
+<!--Form to be selected by user for activity - future will include level of difficulty and more detailed choices !-->
+     <form role="form">
+     <div class="form-group">
+        <div class="form-group">
+            <label for="sel1">Activity of Interest:</label>
+               <select class="form-control" id="sel1">
+                  <option value=running>Running</option>
+                  <option value=gym>Weight Training/Gym</option>
+                  <option value=outdoor>Outdoor Activities</option>
+                </select>
+      </div>
+      </form>
+     
+<form role="form">
+     <div class="form-group">
+        <div class="form-group">
+            <label for="sel2">Age:</label>
+               <select class="form-control" id="sel2">
+                  <option value=18-25>18-25</option>
+                  <option value=26-34>26-34</option>
+                  <option value=35-44>35-44</option>
+                  <option value=45-54>45-56</option>
+                  <option value=55-64>56-65</option>
+                  <option value=65+>65+</option>
+                </select>
+      </div>
+      </form>
+
+<form role="form">
+     <div class="form-group">
+        <div class="form-group">
+            <label for="sel3">Difficulty Level:</label>
+               <select class="form-control" id="sel3">
+                  <option value=Beg>Beginner</option>
+                  <option value=Med>Intermediate</option>
+                  <option value=Exp>Hardcore</option>
+                                  </select>
+      </div>
+      </form>
+
+
+
+<!-- This the code for the submit button on the front page-->
+  <input type="button" value="submit" onclick="location.href= 'ConneX.html'";>
+  
+  
 </form>
         </div>
       </div>
     </div>
     </div>
+ </div>
 
 
-
-
-
-
-</div>
-
-
-     
-    
-
-           <footer> &copy; Copyright ATB 2017</footer>
-</div>
-
-
-
-
-
+<hr>
+  
+    <div class="click">
+     <button><a href="https://en-gb.facebook.com/login/" target="_blank">ConneX to Facebook</a></button>
+     <button><a href="https://twitter.com/?lang=en">ConneX to Twitter</a></button>
+     <button><a href="https://www.instagram.com/?hl=en" target="_blank">ConneX to Instagram</a></button>
+     </div>
  <!--Footer-->
+<footer> &copy; Copyright ATB 2017</footer>
+  <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    
+    <script src="assets/javascript/logic.js"></script>
+  
 
 </body>
 </html>
