@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link href="reset.css">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Faster One">
 <!-- Firebase Reference -->
@@ -16,10 +17,13 @@
   <div class="container">
     <div class="jumbotron">
       <h1 class="one font-effect-fire-animation">Healthy ConneX</h1>
+
 </div>
   <!-- Link with New Tab -->
+
+  <h3>Welcome! Please fill out the form below to see matchup with Healthy Connex members in your area</h3>
     <hr>
-    <form>
+    <form id= "second-form">
   <div class="control-group">
                     <label class="control-label">Gender:</label>
                     <div class="controls">
@@ -33,20 +37,20 @@
      <form role="form">
      <div class="form-group">
         <div class="form-group">
-            <label for="sel1">Activity of Interest:</label>
-               <select class="form-control" id="sel1">
+            <label for="interest">Activity of Interest:</label>
+               <select class="form-control" id="interest">
                   <option value=running>Running</option>
                   <option value=gym>Weight Training/Gym</option>
                   <option value=outdoor>Outdoor Activities</option>
                 </select>
-      </div>
+      </div>   
       </form>
      
 <form role="form">
      <div class="form-group">
         <div class="form-group">
-            <label for="sel2">Age:</label>
-               <select class="form-control" id="sel2">
+            <label for="age">Age:</label>
+               <select class="form-control" id="age">
                   <option value=18-25>18-25</option>
                   <option value=26-34>26-34</option>
                   <option value=35-44>35-44</option>
@@ -59,16 +63,21 @@
 <form role="form">
      <div class="form-group">
         <div class="form-group">
-            <label for="sel3">Difficulty Level:</label>
-               <select class="form-control" id="sel3">
+            <label for="skill">Difficulty Level:</label>
+               <select class="form-control" id="skill">
                   <option value=Beg>Beginner</option>
                   <option value=Med>Intermediate</option>
                   <option value=Exp>Hardcore</option>
                                   </select>
       </div>
+
       </form>
-  <button type="submit" class="btn btn-default" id="add-user-btn">Submit</button>
-  <button type="button" class="btn btn-default">Clear</button>
+      <div class= "buttons">
+  <button type="submit" class="btn btn-default" id="search-user-btn">Submit</button>
+
+  <button type="submit" class="btn btn-default" id="empty-user-btn">Clear Table</button>
+  </div>
+ 
 </form>
         </div>
       </div>
@@ -78,19 +87,20 @@
 <div class="row">
 <div class="col-1g-12">
   <div class="panel panel-default" id="athlete-form">
-     <div class="panel-heading">Athletes in Your Area:</div>
-        <div class="panel-body">
+     <div class="panel-heading" id="athletes"><h4>Athletes in Your Area:</h4></div>
+        <div class="panel-body" id="results">
        <table class="table table-hover" id='athlete-table'>
                 <thead>
                   <tr>
-                    <th>User</th>
+                    <th class= "center">User</th>
                     <th>Favorite Activity</th>
-                    <th>Email</th>
+                    <th class= "center">Email</th>
+                    <th>Age Range</th>
                     <th>Gender</th>
-                    <th>Distance to You</th> <!--changed this table to reflect the right stuff-->
+                    
                    </tr>
                 </thead>
-                <tbody>
+                <tbody class="body">
                 </tbody>
               </table>
     </div>
@@ -98,6 +108,17 @@
     </div>
     </div>
 <hr>
+
+<iframe
+  width="600"
+  height="450"
+  position="center"
+  frameborder="10" style="width:75%;height:85%;position:center"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB_3NNpNcBExD4pqGkoVeeXXI99JrAxFBQ
+    &q=Chapel Hill, NC" allowfullscreen>
+</iframe>
+
+<br> <br>
 
 <div id="floating-panel">
       <input id="address" type="textbox" value="Chapel Hill, NC">
@@ -111,12 +132,13 @@
      </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script rel="stylesheet" type="text/javascript" href="data.js"></script>
  <script type="text/javascript" src="assets/javascript/logic.js"></script>
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYKz1hIpSy_Zc8kV6RUsh_55e7UHn5xl8&callback=initMap"></script>
     
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYKz1hIpSy_Zc8kV6RUsh_55e7UHn5xl8&libraries=geometry">
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYKz1hIpSy_Zc8kV6RUsh_55e7UHn5xl8&libraries=geometry"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYKz1hIpSy_Zc8kV6RUsh_55e7UHn5xl8&libraries=geometry"></script>
 
 </body>
 </html>
